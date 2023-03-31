@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import "./video.css"
+import VideoFooter from './components/footer/VideoFooter'
 import gato from '../videos/gato-1.mp4'
 
 function Video() {
@@ -26,9 +27,9 @@ function Video() {
                 loop
                 src={gato}
             >
-
-
             </video>
+            {/* Side bar */}
+            <VideoFooter />
         </div>
     )
 }
