@@ -5,13 +5,19 @@
     margin-left: 20px;
 }
 
-.videoFooter__text h3 {
-    padding-bottom: 10px;
+.videoFooter__text h4 {
+    padding-bottom: 5px;
+    font-size: 15px;
+    max-width: 200px;
+    max-height: 16px;
 }
 
 .videoFooter__text p {
-    padding-bottom: 10px;
-    font-size: 13px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    max-width: 200px;
+    max-height: 16px;
+    overflow: hidden;
 }
 
 .videoFooter__music {
