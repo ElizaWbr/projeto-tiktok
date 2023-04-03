@@ -1,23 +1,27 @@
 .videoFooter {
     position: relative;
-    bottom: 19%;
+    bottom: 22%;
     color: white;
     margin-left: 20px;
 }
 
 .videoFooter__text h4 {
     padding-bottom: 5px;
-    font-size: 15px;
-    max-width: 200px;
-    max-height: 16px;
+    font-size: 20px;
+    max-width: 280px;
+    max-height: 25px;
 }
 
 .videoFooter__text p {
     margin-bottom: 10px;
-    font-size: 12px;
-    max-width: 200px;
-    max-height: 16px;
+    font-size: 15px;
+    max-width: 280px;
+    max-height: 25px;
     overflow: hidden;
+}
+
+.videoFooter__icon {
+    font-size: 25px !important;
 }
 
 .videoFooter__music {
@@ -25,20 +29,25 @@
 }
 
 .videoFooter__musicText {
-    width: 70%;
+    width: 74%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .videoFooter__musicText p {
     animation: musicText 4s infinite linear;
+    margin-bottom: 0px;
+    max-height: 20px;
 }
+
 
 .videoFooter__record {
     animation: spinTheRecord 4s infinite linear;
     position: absolute;
-    bottom: -2px;
-    right: 20px;
+    right: 13px;
     height: 40px;
+    bottom: -8px;
     filter: invert(1);
 }
 
@@ -59,5 +68,21 @@
 
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .videoFooter__icon {
+        font-size: 30px !important;
+    }
+
+    .videoFooter__record {
+        right: 18px;
+        height: 50px;
+        bottom: -10px;
+    }
+
+    .videoFooter__musicText {
+        width: 72%;
     }
 }

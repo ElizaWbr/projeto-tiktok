@@ -11,12 +11,9 @@ html {
 
 .app__videos {
   height: 90vh;
-  /* max-height: 800px; */
-  max-height: 800px;
+  max-height: 100vh;
   width: 80%;
-  /* max-width: 500px; */
-  max-width: 300px;
-  border: 1px solid black;
+  max-width: 330px;
   border-radius: 10px;
   overflow: scroll;
   scroll-snap-type: y mandatory;
@@ -32,4 +29,14 @@ html {
 .app__videos {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@media only screen and (max-width: 440px) {
+  .app__videos {
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    border: 0px;
+    border-radius: 0px;
+  }
 }
