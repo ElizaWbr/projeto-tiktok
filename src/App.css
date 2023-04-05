@@ -3,21 +3,44 @@ html {
 }
 
 .App {
-  background-color: black;
+  background-image: linear-gradient(to right, #640abd, #ff80b4);
+  /* background-color: #e0d2ef; */
   height: 100vh;
   display: grid;
   place-items: center;
 }
 
-.app__videos {
-  height: 90vh;
+.app__cellphone{
+  height: 95vh;
   max-height: 100vh;
   width: 80%;
-  max-width: 330px;
-  border-radius: 10px;
+  max-width: 310px;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__videos {
+  height: 70vh;
+  max-height: 100vh;
+  width: 100%;
+  max-width: 260px;
   overflow: scroll;
   scroll-snap-type: y mandatory;
   position: relative;
+}
+
+.app__cellphone__button{
+  height: 45px;
+  width: 45px;
+  margin-top: 20px;
+  margin-bottom: -30px;
+  border-radius: 25px;
+  border: 2px solid #ff80b4;
+  /* background-color: #ff80b4; */
 }
 
 /* Esconde a scrollbar no chrome, safari e opera*/
@@ -32,11 +55,28 @@ html {
 }
 
 @media only screen and (max-width: 440px) {
+  .App {
+    background-image: none;
+    background-color: black;
+  }
   .app__videos {
     height: 100vh;
     width: 100%;
     max-width: 100%;
     border: 0px;
     border-radius: 0px;
+  }
+  .app__cellphone{
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .app__cellphone__button{
+    height: 0px;
+    width: 0px;
   }
 }

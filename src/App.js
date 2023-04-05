@@ -26,21 +26,24 @@ function App() {
 
   return (
     <div className="App" style={{ maxHeight: maxHeight + "px" }}>
-      <div className='app__videos'>
+      <div className='app__cellphone'>
+        <div className='app__videos'>
 
-        {video.map((item) => {
-          return (
-            <Video
-              likes={item.likes}
-              messages={item.messages}
-              shares={item.shares}
-              name={item.name}
-              description={item.description}
-              music={item.music}
-              url={item.url}
-            />
-          )
-        })}
+          {video.map((item) => {
+            return (
+              <Video
+                likes={item.likes}
+                messages={item.messages}
+                shares={item.shares}
+                name={item.name}
+                description={item.description}
+                music={item.music}
+                url={item.url}
+              />
+            )
+          })}
+        </div>
+        <div className='app__cellphone__button'></div>
       </div>
     </div>
   );

@@ -1,27 +1,27 @@
 .videoFooter {
     position: relative;
-    bottom: 22%;
+    bottom: 25%;
     color: white;
     margin-left: 20px;
 }
 
 .videoFooter__text h4 {
     padding-bottom: 5px;
-    font-size: 20px;
-    max-width: 280px;
-    max-height: 25px;
+    font-size: 13px;
+    max-width: 190px;
+    max-height: 20px;
 }
 
 .videoFooter__text p {
     margin-bottom: 10px;
-    font-size: 15px;
-    max-width: 280px;
-    max-height: 25px;
+    font-size: 10px;
+    max-width: 190px;
+    max-height: 15px;
     overflow: hidden;
 }
 
 .videoFooter__icon {
-    font-size: 25px !important;
+    font-size: 20px !important;
 }
 
 .videoFooter__music {
@@ -29,7 +29,7 @@
 }
 
 .videoFooter__musicText {
-    width: 74%;
+    width: 69%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -38,16 +38,16 @@
 .videoFooter__musicText p {
     animation: musicText 4s infinite linear;
     margin-bottom: 0px;
-    max-height: 20px;
+    max-height: 15px;
 }
 
 
 .videoFooter__record {
     animation: spinTheRecord 4s infinite linear;
     position: absolute;
-    right: 13px;
+    right: 10px;
     height: 40px;
-    bottom: -8px;
+    bottom: -11px;
     filter: invert(1);
 }
 

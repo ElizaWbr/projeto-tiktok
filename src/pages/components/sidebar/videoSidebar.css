@@ -1,21 +1,21 @@
 .videoSidebar {
     position: absolute;
-    top: 50%;
-    right: 10px;
+    top: 51%;
+    right: 17px;
     color: white;
 }
 
 .videoSidebar__options {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
 .videoSidebar__text {
-    font-size: 15px !important;
+    font-size: 10px !important;
 }
 
 .videoSidebar__icons {
-    font-size: 20px !important;
+    font-size: 15px !important;
 }
 
 @media only screen and (max-width: 440px) {
